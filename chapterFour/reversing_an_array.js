@@ -8,11 +8,11 @@ function reverseArray(array) {
   console.log(newArray);
 }
 
-//not working; editing array properly but changes do not persist
+
 function reverseArrayInPlace(array) {
   var arrayCount = array.length
   for (var i = 0; i < arrayCount; i++) {
      var elem = array.pop(i);
-     array.push(elem);
+     array[i] = elem;
   }
 }
