@@ -9,9 +9,9 @@ function arrayToList(array){
 function listToArray(list){
   arr = [];
   for (var node = list; node; node = node.rest) {
-    array.push(node.value);
+    arr.push(node.value);
   }
-  return array;
+  return arr;
 }
 
 
