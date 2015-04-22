@@ -9,11 +9,17 @@ ancestry.forEach(function(person) {
 });
 
 
-var mothers = [];
-var children = [];
-for (var event in byName){
-  if (event != null){
-    mothers.push(byName[event].mother);
-  	children.push(byName[event].name);
+var ageDiff = [];
+function ageDifference(array){
+  for (var i = 0; i < array.length; i++){
+    if (byName[ancestry[i].mother] !== undefined) {
+	  ageDiff.push(Math.round((ancestry[i].born) - (byName[ancestry[i].mother].born)));
+    }
   }
-};
+  return ageDiff;
+}
+
+console.log(average(ageDifference(ancestry)));
+//for (var name in byName) {
+	//console.log(byName[name]);
+//}

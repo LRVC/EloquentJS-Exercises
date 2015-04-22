@@ -1,6 +1,6 @@
 function countB(string) {
   var numB = 0;
-  for (var i = 0; i <= string.length; i++) {
+  for (var i = 0; i < string.length; i++) {
     if (string.charAt(i) === "B") {
       numB++;
     }
@@ -9,11 +9,11 @@ function countB(string) {
 }
 
 function countChar(string, letter) {
-  var numB = 0;
-  for (var i = 0; i <= string.length; i++) {
+  var numChar = 0;
+  for (var i = 0; i < string.length; i++) {
     if (string.charAt(i) === letter) {
-      numB++;
+      numChar++;
     }
   }
-  return numB;
+  return numChar;
 }
