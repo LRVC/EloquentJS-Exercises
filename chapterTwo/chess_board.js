@@ -7,11 +7,11 @@ function makeGrid(size) {
         hashLine += "\n ";
       }
     for (var lineCount = 0; lineCount <= size; lineCount++) {
-        if (lineCount % 2 === 0) {
-          hashLine += " ";
-        } else {
-          hashLine += "#";
-        }
+      if (lineCount % 2 === 0) {
+        hashLine += " ";
+      } else {
+        hashLine += "#";
+      }
     }
   }
   console.log(hashLine)

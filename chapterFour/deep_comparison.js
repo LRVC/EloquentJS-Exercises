@@ -3,5 +3,7 @@ function deepEqual(valOne, valTwo){
     return true;
   }
 
-  if (typeof valOne != "Object" || typeof valTwo != "Object")
+  if (typeof valOne === 'object' || valTwo === 'object'{
+    if (//num keys === num keys)
+    }
 }
