@@ -8,7 +8,12 @@ ancestry.forEach(function(person) {
   byName[person.name] = person;
 });
 
-var mothers = {};
+
+var mothers = [];
+var children = [];
 for (var event in byName){
-  console.log(var pers = (byName[event]));
-}
+  if (event != null){
+    mothers.push(byName[event].mother);
+  	children.push(byName[event].name);
+  }
+};

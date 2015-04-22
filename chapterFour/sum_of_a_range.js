@@ -5,10 +5,12 @@ function range(start, end, step) {
   }
   if (step > 0){
     for (var i = start; i <=end; i += step){
-      newArray.push(i)
+      newArray.push(i);
     }
-  } else (step < 0) {
-    for (var i=start; i>=end; i += step)
+  } else {
+    for (var i=start; i>=end; i += step){
+      newArray.push(i);
+    }
   }
   return newArray;
 }
